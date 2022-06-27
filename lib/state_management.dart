@@ -3,7 +3,7 @@ import 'package:http/http.dart';
 
 class HomePageManager {
   final resultNotifier = ValueNotifier<RequestState>(RequestInitial());
-  static const urlPrefix = 'https://jsonplaceholder.typicode.com';
+  static const urlPrefix = 'http://localhost:9000/ip/52.93.153.170';
 
   Future<void> makeGetRequest() async {
     resultNotifier.value = RequestLoadInProgress();
